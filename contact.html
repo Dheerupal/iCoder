@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Beginner programmer</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-success fw-bold fs-3" href="/responsive website/logo.jpg">iCoder</a>
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="/responsive website/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/responsive website/about.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Topics
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Technology</a></li>
+                                <li><a class="dropdown-item" href="#">Web Development</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Write for us</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/responsive website/contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container " style="padding-top: 65px;">
+        <h2 class="text-center fw-bold fs-2">Contact Us</h2>
+        <div class="ct-frm-cont my-5">
+            <!--Actual form-->
+            <form>
+                <input type="hidden" name="landing" value="true">
+
+                <div class="frm-gr">
+                    <label for="name" class="frm-lb  fs-5 ">Your Name:<span class="require">*</span></label>
+                    <div>
+                        <input type="text"
+                            onkeypress="return (event.charCode>=65 && event.charCode<=90)||(event.charCode>=97 && event.charCode<=122)||( event.charCode==32)"
+                            placeholder="Enter only alphabetic value" class="form-control border-box" name="name"
+                            id="name" required="required" autocomplete="off">
+                    </div>
+                    <ul class="name-err frm-item-err"></ul>
+                </div>
+
+                <div class="frm-gr">
+                    <label for="email" class="frm-lb  fs-5">Your E-mail Address:<span class="require">*</span></label>
+                    <div>
+                        <input type="text" class="form-control border-box" name="email" id="email" value=""
+                            placeholder="Enter Your E-mail Address" autocorrect="off" autocapitalize="none"
+                            required="required" autocomplete="off">
+                    </div>
+                    <ul class="email-err frm-item-err"></ul>
+                </div>
+
+                <div class="frm-gr">
+                    <label for="topic" class="frm-lb  fs-5">The Particular Topic You're Contacting Us About:<span
+                            class="require">*</span></label>
+                    <div>
+                        <select name="topic" id="topic" class="form-control border-box" required="required">
+                            <option value="">-- Please Select --</option>
+                            <option value="">Wrong Information</option>
+                            <option value="">Server Down</option>
+                            <option value="">Appraisal</option>
+                            <option value="">Complain</option>
+
+                        </select>
+                    </div>
+                    <ul class="topic-err frm-item-err"></ul>
+                </div>
+
+                <div class="frm-gr">
+                    <label for="question" class="frm-lb  fs-5">Your Question or Comment:<span
+                            class="require">*</span></label>
+                    <div>
+                        <textarea rows="12" class="form-control border-box" name="question" id="question" placeholder=""
+                            required="required"></textarea>
+                    </div>
+                    <ul class="question-err frm-item-err"></ul>
+                </div>
+
+                <!--global level errors-->
+                <ul class="ct-global-danger hidden"></ul>
+                <ul class="ct-global-success hidden"></ul>
+
+                <div class="frm-gr text-right">
+                    <button class="btn btn-outline-success" type="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Privacy start -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privacyModalLabel">It is about our Privacy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        What follows is just some placeholder text for this modal dialog. Sipping on Rosé, Silver Lake
+                        sun, coming
+                        up all lazy. It’s in the palm of your hand now baby. So we hit the boulevard. So make a wish,
+                        I'll make it
+                        like your birthday everyday. Do you ever feel already buried deep six feet under? It's time to
+                        bring out the
+                        big balloons. You could've been the greatest. Passport stamps, she's cosmopolitan. Your kiss is
+                        cosmic,
+                        every move is magic.
+                        <br><br>
+                        We're living the life. We're doing it right. Open up your heart. I was tryna hit it and quit it.
+                        Her love is
+                        like a drug. Always leaves a trail of stardust. The girl's a freak, she drive a jeep in Laguna
+                        Beach. Fine,
+                        fresh, fierce, we got it on lock. All my girls vintage Chanel baby.
+                        <br><br>
+                        Before you met me I was alright but things were kinda heavy. Peach-pink lips, yeah, everybody
+                        stares. This
+                        is no big deal. Calling out my name. I could have rewrite your addiction. She's got that, je ne
+                        sais quoi,
+                        you know it. Heavy is the head that wears the crown. 'Cause, baby, you're a firework. Like
+                        thunder gonna
+                        shake the ground.
+                        <br><br>
+                        Just own the night like the 4th of July! I’m gon’ put her in a coma. What you're waiting for,
+                        it's time for
+                        you to show it off. Can't replace you with a million rings. You open my eyes and I'm ready to
+                        go, lead me
+                        into the light. And here you are. I’m gon’ put her in a coma. Come on, let your colours burst.
+                        So cover your
+                        eyes, I have a surprise. As I march alone to a different beat. Glitter all over the room pink
+                        flamingos in
+                        the pool.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Privacy end -->
+
+    <!-- Term start -->
+    <div class="modal fade" id="termModal" tabindex="-1" aria-labelledby="termModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termModalLabel">It is about our Term</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        What follows is just some placeholder text for this modal dialog. Sipping on Rosé, Silver Lake
+                        sun, coming
+                        up all lazy. It’s in the palm of your hand now baby. So we hit the boulevard. So make a wish,
+                        I'll make it
+                        like your birthday everyday. Do you ever feel already buried deep six feet under? It's time to
+                        bring out the
+                        big balloons. You could've been the greatest. Passport stamps, she's cosmopolitan. Your kiss is
+                        cosmic,
+                        every move is magic.
+                        <br><br>
+                        We're living the life. We're doing it right. Open up your heart. I was tryna hit it and quit it.
+                        Her love is
+                        like a drug. Always leaves a trail of stardust. The girl's a freak, she drive a jeep in Laguna
+                        Beach. Fine,
+                        fresh, fierce, we got it on lock. All my girls vintage Chanel baby.
+                        <br><br>
+                        Before you met me I was alright but things were kinda heavy. Peach-pink lips, yeah, everybody
+                        stares. This
+                        is no big deal. Calling out my name. I could have rewrite your addiction. She's got that, je ne
+                        sais quoi,
+                        you know it. Heavy is the head that wears the crown. 'Cause, baby, you're a firework. Like
+                        thunder gonna
+                        shake the ground.
+                        <br><br>
+                        Just own the night like the 4th of July! I’m gon’ put her in a coma. What you're waiting for,
+                        it's time for
+                        you to show it off. Can't replace you with a million rings. You open my eyes and I'm ready to
+                        go, lead me
+                        into the light. And here you are. I’m gon’ put her in a coma. Come on, let your colours burst.
+                        So cover your
+                        eyes, I have a surprise. As I march alone to a different beat. Glitter all over the room pink
+                        flamingos in
+                        the pool.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Term end -->
+
+
+    <!-- FOOTER -->
+    <footer class="container my-5">
+        <p class="float-end "><a href="#">Back to top</a></p>
+        <p>© 2017–2021 Company, Inc. · <a href="#privacyModal" data-bs-toggle="modal"
+                data-bs-target="#privacyModal">Privacy</a> ·
+            <a href="#termModal" data-bs-toggle="modal" data-bs-target="#termModal">Terms</a>
+        </p>
+    </footer>
+
+
+
+    <!-- <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script> -->
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+-->
+</body>
+
+</html>
